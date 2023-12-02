@@ -10,6 +10,7 @@ $routes->get('/workshop', 'Home::workshop');
 $routes->get('/gallery', 'Home::gallery');
 $routes->get('/Contact', 'Home::Contact');
 $routes->get('/Shop', 'Home::Shop');
+$routes->get('/Cart', 'Home::Cart');
 
 
 
