@@ -1,50 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8" />
+<meta charset="utf-8" />
     <title>Simply Amazed HTML Template by Tooplate</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="fontawesome/css/all.min.css" type="text/css" /> 
-    <link rel="stylesheet" href="css/slick.css" type="text/css" />   
-    <link rel="stylesheet" href="css/tooplate-simply-amazed.css" type="text/css" />
-<!--
+    <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css" type="text/css" />
+    <link rel="stylesheet" href="/css/slick.css" type="text/css" />
+    <link rel="stylesheet" href="/css/tooplate-simply-amazed.css" type="text/css" />
 
+
+    <!-- 
 Tooplate 2123 Simply Amazed
 
-https://www.tooplate.com/view/2123-simply-amazed
+https://www.tooplate.com/view/2123-simply-amazed -->
+<style>
+        /* Optional: You can add some basic styling to the button */
+        .circle-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: white; /* Change the background color as needed */
+      color: green; /* Change the text color as needed */
+      border: none;
+      cursor: pointer;
+    }
 
--->
+    .circle-button svf {
+      width: 80%; /* Adjust the size of the SVG icon */
+      height: 80%;
+    }
+        
+    </style>
 </head>
+  
 
 <body>
+
     <div id="outer">
         <header class="header order-last" id="tm-header">
+            
             <nav class="navbar">
-                <div class="collapse navbar-collapse single-page-nav">
+                
+                <div class="collapse navbar-collapse ">
+                
                     <ul class="navbar-nav">
+                        
                         <li class="nav-item">
-                            <a class="nav-link" href="#section-1"><span class="icn"><i class="fas fa-2x fa-air-freshener"></i></span> Our Company</a>
+                            <a class="nav-link" href="/first"><span class="icn"><i class="fas fa-2x fa-air-freshener"></i></span> Our Coop</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/gallery"><span class="icn"><i class="far fa-2x fa-images"></i></span> Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#section-2"><span class="icn"><i class="fab fa-2x fa-battle-net"></i></span> Our Work</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#section-3"><span class="icn"><i class="far fa-2x fa-images"></i></span> Gallery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/workshop"><span class="icn"><i class="far fa-2x fa-comments"></i></span> Contact</a>
+                            <a class="nav-link" href="/Contact"><span class="icn"><i class="far fa-2x fa-comments"></i></span> Contact</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/workshop"><span class="icn"><i class="fa fa-briefcase fa-2x "></i></span> Work Shop</a>
                         </li>
+                        <li class="nav-item">
+                        <button class="circle-button" onclick="confirmLogout()">
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-power" viewBox="0 0 16 16">
+    <path d="M7.5 1v7h1V1z"/>
+    <path d="M3 8.812a4.999 4.999 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812"/>
+  </svg> 
+</button> 
+                        </li>
+                       
+                      
+                        <script>
+
+                     function confirmLogout() {
+                            var isConfirmed = confirm('Are you sure you want to logout?');
+
+                            if (isConfirmed) {
+                                // Redirect to your logout route
+                                console.log('Redirecting to /');
+                                window.location.href = '/';
+                            } else {
+                                // The user clicked "Cancel" in the confirmation dialog
+                                alert('Logout cancelled.');
+                            }
+                        }
+                        </script>
                     </ul>
                 </div>
             </nav>
         </header>
         
+
         <button class="navbar-button collapsed" type="button">
             <span class="menu_icon">
                 <span class="icon-bar"></span>
@@ -52,17 +103,17 @@ https://www.tooplate.com/view/2123-simply-amazed
                 <span class="icon-bar"></span>
             </span>
         </button>
-        
+
         <main id="content-box" class="order-first">
-            <div class="banner-section section parallax-window" data-parallax="scroll" data-image-src="img/section-1-bg.jpg" id="section-1">
-                <div class="container">
-                    <div class="item">
-                        <div class="bg-blue-transparent logo-fa"><span><i class="fas fa-2x fa-atom"></i></span>MOCOFACO</div>
-                        <div class="bg-blue-transparent simple"><p>Your simplest HTML template, the most amazing page ever, yet free!</p></div>
-                    </div>
-                </div>
-            </div>
-        
+        <div class="banner-section section parallax-window" data-parallax="scroll" data-image-src="img/logo.png" id="section-1">
+    <div class="container">
+        <div class="item">
+            <div class="bg-blue-transparent logo-fa"><span><i class="fas fa-2x fa-atom"></i></span>MUCOFACO</div>
+            <div class="bg-blue-transparent simple"><p>Your simplest HTML template, the most amazing page ever, yet free!</p></div>
+        </div>
+    </div>
+</div>
+
             <section class="work-section section" id="section-2">
                 <div class="container">
                     <div class="row">
@@ -70,21 +121,21 @@ https://www.tooplate.com/view/2123-simply-amazed
                             <div class="tm-work-item-inner">
                                 <div class="icn"><i class="fas fa-2x fa-icons"></i></div>
                                 <h3>.01 Get An Idea</h3>
-                                <p>Simply Amazed is free HTML template provided by Tooplate website. Please tell your friends about our website. Thank you.</p>
-                            </div>                        
+                                <p>Simply Amazed is a free HTML template provided by the Tooplate website. Please tell your friends about our website. Thank you.</p>
+                            </div>
                         </div>
                         <div class="item col-md-4 one">
                             <div class="tm-work-item-inner">
                                 <div class="icn"><i class="fas fa-2x fa-tools"></i></div>
                                 <h3>.02 Create It</h3>
-                                <p>This is a full-width CSS template with bootstrap 5, you can download, modify and use this layout for your simple CSS website.</p>
+                                <p>This is a full-width CSS template with Bootstrap 5. You can download, modify, and use this layout for your simple CSS website.</p>
                             </div>
                         </div>
                         <div class="item col-md-4 two">
                             <div class="tm-work-item-inner">
                                 <div class="icn"><i class="fab fa-2x fa-phoenix-framework"></i></div>
                                 <h3>.03 Execute it</h3>
-                                <p>You are allowed to use this for your personal and commerical projects, you are not allowed to redistribute the template ZIP file on any download site.</p>
+                                <p>You are allowed to use this for your personal and commercial projects. You are not allowed to redistribute the template ZIP file on any download site.</p>
                             </div>
                         </div>
                     </div>
@@ -94,94 +145,12 @@ https://www.tooplate.com/view/2123-simply-amazed
                 </div>
             </section>
 
-            <section class="gallery-section section parallax-window" data-parallax="scroll" data-image-src="img/section-3-bg.jpg" id="section-3">
+            <section class="gallery-section section parallax-window" data-parallax="scroll" data-image-src="img/logo.png" id="section-3">
                 <div class="container">
                     <div class="title text-right">
-                        <h2>Our Gallery</h2>
+                        <h2>Our Features</h2>
                     </div>
-                    <div class="mx-auto gallery-slider">
-                        <figure class="effect-julia item">
-                            <img src="img/gallery-img-01.jpg" alt="Image">
-                            <figcaption>
-                                <div>
-                                    <p>Julia dances in the deep dark</p>
-                                </div>
-                                <a href="#">View more</a>
-                            </figcaption>
-                        </figure>
-                        <figure class="effect-julia item">
-                            <img src="img/gallery-img-02.jpg" alt="Image">
-                            <figcaption>
-                                <div>
-                                    <p>Julia dances in the deep dark</p>
-                                </div>
-                                <a href="#">View more</a>
-                            </figcaption>
-                        </figure>
-                        <figure class="effect-julia item">
-                            <img src="img/gallery-img-03.jpg" alt="Image">
-                            <figcaption>
-                                <div>
-                                    <p>Julia dances in the deep dark</p>
-                                </div>
-                                <a href="#">View more</a>
-                            </figcaption>
-                        </figure>
-                        <figure class="effect-julia item">
-                            <img src="img/gallery-img-04.jpg" alt="Image">
-                            <figcaption>
-                                <div>
-                                    <p>Julia dances in the deep dark</p>
-                                </div>
-                                <a href="#">View more</a>
-                            </figcaption>
-                        </figure>
-                        <figure class="effect-julia item">
-                            <img src="img/gallery-img-05.jpg" alt="Image">
-                            <figcaption>
-                                <div>
-                                    <p>Julia dances in the deep dark</p>
-                                </div>
-                                <a href="#">View more</a>
-                            </figcaption>
-                        </figure>
-                        <figure class="effect-julia item">
-                            <img src="img/gallery-img-06.jpg" alt="Image">
-                            <figcaption>
-                                <div>
-                                    <p>Julia dances in the deep dark</p>
-                                </div>
-                                <a href="#">View more</a>
-                            </figcaption>
-                        </figure>
-                        <figure class="effect-julia item">
-                            <img src="img/gallery-img-07.jpg" alt="Image">
-                            <figcaption>
-                                <div>
-                                    <p>Julia dances in the deep dark</p>
-                                </div>
-                                <a href="#">View more</a>
-                            </figcaption>
-                        </figure>
-                        <figure class="effect-julia item">
-                            <img src="img/gallery-img-08.jpg" alt="Image">
-                            <figcaption>
-                                <div>
-                                    <p>Julia dances in the deep dark</p>
-                                </div>
-                                <a href="#">View more</a>
-                            </figcaption>
-                        </figure>
-                        <figure class="effect-julia item">
-                            <img src="img/gallery-img-09.jpg" alt="Image">
-                            <figcaption>
-                                <div>
-                                    <p>Julia dances in the deep dark</p>
-                                </div>
-                                <a href="#">View more</a>
-                            </figcaption>
-                        </figure>
-                    </div>
+                  
                 </div>
             </section>
 
@@ -223,26 +192,19 @@ https://www.tooplate.com/view/2123-simply-amazed
                                     </li>
                                     <li>
                                         <span class="icn"><i class="fas fa-globe-asia"></i></span>
-                                        <span class="lbl">URL:</span> <a href="#">www.company.com</a>
+                                        <span class="lbl">URL:</span> <a href="https://www.facebook.com/profile.php?id=61550955003982">www.MUCOFACO.com</a>
                                     </li>
                                 </ul>
-                            </div>                        
+                            </div>
                         </div>
                         <div class="col-lg-3 col-md-12 map">
-    <!-- Map -->
-    <div class="col-lg-3 col-md-12 map">
-    <!-- Map -->
-    <iframe width="100%" height="400" id="gmap-canvas"
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15445.673829778264!2d121.1253017!3d13.2393303!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bc931c33bc5193%3A0xe9776d48fd8f8d31!2sMulawin%20Elementary%20Scool!5e0!3m2!1sen!2sph!4v1637376351662!5m2!1sen!2sph"
-        frameborder="0" style="border:0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-</div>
-
-
-
-                    </div>                
+                            <!-- Map -->
+                            <iframe width="100%" height="400" id="gmap-canvas" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15445.673829778264!2d121.1253017!3d13.2393303!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bc931c33bc5193%3A0xe9776d48fd8f8d31!2sMulawin%20Elementary%20Scool!5e0!3m2!1sen!2sph!4v1637376351662!5m2!1sen!2sph" frameborder="0" style="border:0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
                 </div>
                 <footer class="footer container container-2">
-                    <div class="row"> 
+                    <div class="row">
                         <p class="col-sm-7">Copyright 2021 Simply Amazed Co.</p>
                         <p class="col-sm-5 text-right design">Design: <a rel="nofollow" href="https://www.tooplate.com" target="_parent">Tooplate</a></p>
                     </div>
@@ -257,4 +219,5 @@ https://www.tooplate.com/view/2123-simply-amazed
     <script src="js/parallax.min.js"></script>
     <script src="js/templatemo-script.js"></script>
 </body>
+
 </html>

@@ -12,4 +12,16 @@ class Home extends BaseController
     {
         return view('WorkShop');
     }
+    public function gallery(): string
+    {
+        return view('gallery');
+    }
+    public function Contact(): string
+    {
+        return view('Contact');
+    }
+    public function Shop(): string
+    {
+        return view('Shop');
+    }
 }

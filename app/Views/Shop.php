@@ -123,7 +123,7 @@ body {
 <body>
 <nav>
     
-    <a href="/first">Our Company</a>
+    <a href="/first">Our Coop</a>
     
     <a href="/gallery">Gallery</a>
     <a href="/Contact">Contact</a>
