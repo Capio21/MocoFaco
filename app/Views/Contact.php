@@ -128,7 +128,7 @@ body {
     
     <a href="/first">Our Coop</a>
    
-    <a href="/gallery">Gallery</a>
+    <a href="/members">Members List</a>
     <a href="/workshop">Contact</a>
     <a href="/workshop">Workshop</a>
 </nav>

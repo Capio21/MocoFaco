@@ -28,4 +28,8 @@ class Home extends BaseController
     {
         return view('Cart');
     }
+    public function AdminPage(): string
+    {
+        return view('AdminPage');
+    }
 }

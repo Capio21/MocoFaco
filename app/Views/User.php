@@ -57,7 +57,7 @@ https://www.tooplate.com/view/2123-simply-amazed -->
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="/gallery"><span class="icn"><i class="far fa-2x fa-images"></i></span> Gallery</a>
+                            <a class="nav-link" href="/members"><span class="icn"><i class="far fa-2x fa-images"></i></span> Members List</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/Contact"><span class="icn"><i class="far fa-2x fa-comments"></i></span> Contact</a>
